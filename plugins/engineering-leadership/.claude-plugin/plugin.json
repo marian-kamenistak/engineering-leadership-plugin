@@ -1,0 +1,24 @@
+{
+  "name": "engineering-leadership",
+  "displayName": "Engineering Leadership",
+  "description": "Readiness assessments, salary models, 1:1 playbooks and benchmarks for engineering leaders, grounded in 3,611 mentoring sessions since 2019.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Marian Kamenistak",
+    "url": "https://www.marian.coach"
+  },
+  "homepage": "https://www.marian.coach/mcp",
+  "repository": "https://github.com/marian-kamenistak/engineering-leadership-plugin",
+  "license": "MIT",
+  "keywords": [
+    "engineering-management",
+    "team-lead",
+    "career",
+    "salary",
+    "one-on-ones",
+    "leadership",
+    "mentoring",
+    "promotion"
+  ],
+  "skills": "./skills/"
+}
