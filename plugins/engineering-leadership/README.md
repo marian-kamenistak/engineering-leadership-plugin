@@ -1,7 +1,7 @@
 # engineering-leadership
 
 Should I take the lead role, and what am I worth. Two skills and two open MCP servers that let
-Claude answer both properly, from 3,611 mentoring sessions with engineering leaders since 2019.
+Claude answer both properly, from 3,662 mentoring sessions with engineering leaders since 2019.
 
 ## Components
 

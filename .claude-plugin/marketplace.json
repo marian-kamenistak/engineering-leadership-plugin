@@ -10,7 +10,7 @@
       "name": "engineering-leadership",
       "source": "./plugins/engineering-leadership",
       "displayName": "Engineering Leadership",
-      "description": "Readiness assessments, salary models, 1:1 playbooks and benchmarks for engineering leaders, grounded in 3,611 mentoring sessions since 2019.",
+      "description": "Readiness assessments, salary models, 1:1 playbooks and benchmarks for engineering leaders, grounded in 3,662 mentoring sessions since 2019.",
       "version": "1.0.0",
       "keywords": [
         "engineering-management",

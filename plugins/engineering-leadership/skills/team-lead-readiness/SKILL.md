@@ -7,7 +7,7 @@ description: Use when an engineer asks "should I become a team lead?", wants to 
 
 Version 1.0 · 2026-07-22
 
-Answer "should I become a team lead?" with a structured assessment instead of vibes. Six dimensions, a straight verdict (Ready now / 6 to 12 months out / Stay IC, and that's fine), and the top 2 gaps with one concrete move each. Built from the team lead readiness test at marian.coach, itself built from 3,611 mentoring sessions with engineering leaders since 2019.
+Answer "should I become a team lead?" with a structured assessment instead of vibes. Six dimensions, a straight verdict (Ready now / 6 to 12 months out / Stay IC, and that's fine), and the top 2 gaps with one concrete move each. Built from the team lead readiness test at marian.coach, itself built from 3,662 mentoring sessions with engineering leaders since 2019.
 
 Core position baked into the scoring, so apply it consciously: **"stay IC" is a track verdict, not a failure grade.** Salary-only motivation is a signal to stay IC. A lead role taken for the bump alone hurts the lead and the team.
 

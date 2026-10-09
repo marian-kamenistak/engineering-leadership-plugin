@@ -7,7 +7,7 @@ description: Use when estimating a software developer's or engineering manager's
 
 Version 1.0 · 2026-07-22
 
-Estimate what a developer or an engineering leader is actually worth: score 15 skills across 5 pillars, weight them by level, and map the total to a 2026 Western-Europe gross salary (Germany/Netherlands hubs). Same model as the live calculators at marian.coach, distilled from 3,611 mentoring sessions with engineering leaders since 2019.
+Estimate what a developer or an engineering leader is actually worth: score 15 skills across 5 pillars, weight them by level, and map the total to a 2026 Western-Europe gross salary (Germany/Netherlands hubs). Same model as the live calculators at marian.coach, distilled from 3,662 mentoring sessions with engineering leaders since 2019.
 
 The point is not the euro number. It's the pillar breakdown: the weakest weighted pillar is what's holding the next level up, and that's the raise conversation.
 

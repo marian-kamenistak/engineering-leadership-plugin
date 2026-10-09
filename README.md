@@ -8,7 +8,7 @@ Install it and Claude can run a calibrated 17-question readiness assessment, sco
 against 2026 European salary data, pull org-ratio benchmarks and 1:1 playbooks, estimate what a
 coach should cost, and write the business case if your company is the one paying.
 
-Built from 3,611 mentoring sessions with engineering leaders in 17+ countries since 2019.
+Built from 3,662 mentoring sessions with engineering leaders in 17+ countries since 2019.
 
 ## Install
 
@@ -68,8 +68,9 @@ assessment exists to avoid.
 ## Where the numbers come from
 
 Salary bands are 2026 Western-Europe gross, Germany and Netherlands hubs. Benchmarks and
-distributions come from mentoring sessions delivered since 2019, rated 9.17/10 on average across
-300+ reviews. Nothing is scraped and nothing is modelled from job ads.
+distributions come from mentoring sessions delivered since 2019. Mentees rate every session from
+0 to 10 right after it; since 2024 the average is 9.17/10. Nothing is scraped and nothing is
+modelled from job ads.
 
 The salary figure is the hook. The pillar breakdown is the useful part: your weakest weighted
 pillar is what is blocking the next level, and that is the conversation to have with your
