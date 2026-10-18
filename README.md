@@ -69,7 +69,7 @@ assessment exists to avoid.
 
 Salary bands are 2026 Western-Europe gross, Germany and Netherlands hubs. Benchmarks and
 distributions come from mentoring sessions delivered since 2019. Mentees rate every session from
-0 to 10 right after it; since 2024 the average is 9.17/10. Nothing is scraped and nothing is
+0 to 10 right after it; since 2024 the average is 9.79/10. Nothing is scraped and nothing is
 modelled from job ads.
 
 The salary figure is the hook. The pillar breakdown is the useful part: your weakest weighted
