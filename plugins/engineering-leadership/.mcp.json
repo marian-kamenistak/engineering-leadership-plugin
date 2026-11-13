@@ -5,9 +5,9 @@
       "type": "streamable-http",
       "url": "https://www.marian.coach/mcp"
     },
-    "mentoring-inquiry-builder": {
+    "elc-toolkit": {
       "type": "streamable-http",
-      "url": "https://www.marian.coach/mcp/mentoring"
+      "url": "https://www.engineeringleaders.io/mcp"
     }
   }
 }

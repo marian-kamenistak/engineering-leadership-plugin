@@ -1,0 +1,26 @@
+{
+  "name": "marian-coach",
+  "displayName": "Marian Coach",
+  "description": "Your own career as an engineering leader: are you ready to lead, what are you worth in salary and market value, how do you look from outside, and how do you get your company to pay for mentoring. Built from 3,662 mentoring sessions with engineering leaders since 2019.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Marian Kamenistak",
+    "url": "https://www.marian.coach/"
+  },
+  "homepage": "https://www.marian.coach/",
+  "repository": "https://github.com/marian-kamenistak/engineering-leadership-plugin",
+  "license": "MIT",
+  "privacyPolicyUrl": "https://www.marian.coach/privacy-policy/",
+  "keywords": [
+    "career",
+    "team-lead",
+    "engineering-management",
+    "salary",
+    "market-value",
+    "promotion",
+    "linkedin",
+    "personal-brand",
+    "mentoring"
+  ],
+  "skills": "./skills/"
+}

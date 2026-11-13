@@ -1,0 +1,228 @@
+{
+  "version": "1.1",
+  "date": "2026-11-12",
+  "note": "Level 1 (typical for 2026) is defined by the written anchors below, not by a dataset of scored profiles. Recalibrate after the first 30 runs (see SKILL.md, Calibration).",
+  "scale": {"missing": 0.4, "typical": 1.0, "strong": 1.7},
+  "levels": {
+    "0": "not visible yet",
+    "0.5": "a first sign",
+    "1": "typical for 2026",
+    "1.5": "ahead of most",
+    "2": "strong"
+  },
+  "bands": [
+    {"step": 1, "below": 0.48, "share": 4, "name": "Hidden gem", "line": "The work is there. The internet has not met it yet."},
+    {"step": 2, "below": 0.63, "share": 7, "name": "First sparks", "line": "A few signs are out. One evening adds the next ones."},
+    {"step": 3, "below": 0.78, "share": 12, "name": "Warming up", "line": "The outline is visible. A few evenings make it sharp."},
+    {"step": 4, "below": 0.93, "share": 17, "name": "Nearly there", "line": "One or two fixes from a typical profile."},
+    {"step": 5, "below": 1.09, "share": 20, "name": "On the radar", "line": "A typical 2026 profile: complete, honest, easy to forget. Give people one reason to remember you."},
+    {"step": 6, "below": 1.27, "share": 17, "name": "Worth a second look", "line": "A recruiter stops scrolling. Give them one more proof."},
+    {"step": 7, "below": 1.44, "share": 12, "name": "Hard to ignore", "line": "Anyone who looks you up finds proof. Keep it fresh."},
+    {"step": 8, "below": 1.62, "share": 7, "name": "In demand", "line": "People bring your name up when a role opens."},
+    {"step": 9, "below": 9.9, "share": 4, "name": "Magnet", "line": "The roles come to you. Your job is to choose."}
+  ],
+  "profiles": {
+    "developer": {
+      "name": "Software developer",
+      "detect": ["developer", "engineer", "programmer", "architect", "sre", "devops", "data engineer", "ml engineer", "qa", "tester", "tech lead", "staff", "principal"],
+      "criteria": [
+        {"id": "headline", "name": "Headline and positioning", "weight": 12,
+         "reads": "LinkedIn headline and About, GitHub bio, personal site",
+         "levels": {
+           "0": "The headline is the current job title, often with a programming language (\"Senior Java Developer\"). No About text.",
+           "1": "A role-based headline and a short About that says what they do.",
+           "2": "Business domain plus technical scope in the headline (\"Biometrics Data Engineer\"), an About that names the problem they solve and for whom, and the same line on GitHub or their site."},
+         "plays": {
+           "week": ["Rewrite the headline as domain plus scope. 20 minutes.", "Write a five-line About: who you help, with what, one result, what you want next."],
+           "month": ["Use the same line on GitHub, your site and your CV, so every place tells one story."],
+           "quarter": []}},
+        {"id": "outcomes", "name": "Outcomes in the experience section", "weight": 16,
+         "reads": "LinkedIn experience entries, project descriptions, case studies",
+         "levels": {
+           "0": "Job titles and dates only, or lists of technologies and duties.",
+           "1": "Each recent role has a few lines on what was built. Activity words dominate (worked on, responsible for).",
+           "2": "The last two roles each carry two or more results with a number or a named effect on users, revenue, cost or time (\"cut deploy time from 40 minutes to 4\")."},
+         "plays": {
+           "week": ["Add one result with a number to your current role. Ask yourself: what got faster, cheaper or bigger because of me?"],
+           "month": ["Rewrite the last two roles as three result lines each. Check each number with a colleague first."],
+           "quarter": ["Keep a small log of results at work, one line a week, so the next update takes ten minutes."]}},
+        {"id": "proof_of_work", "name": "Proof of work", "weight": 16,
+         "reads": "GitHub or GitLab (pinned repos, README quality, stars, recent commits), package registries, live products, demos, LinkedIn Featured, published papers and patents",
+         "levels": {
+           "0": "No public code, product or demo that can be opened.",
+           "1": "A GitHub profile with some repositories, mostly forks, course work or old projects; or one link to a product they worked on.",
+           "2": "At least one project of their own with a clear README that other people use (stars, forks, downloads, issues from strangers), or merged contributions to a known open-source project, pinned and linked from LinkedIn."},
+         "plays": {
+           "week": ["Pin your best repository and give it a README: the problem, a screenshot, how to run it.", "Add it to LinkedIn Featured."],
+           "month": ["Ship one small pet project or AI skill that solves a problem you have. Small and finished beats big and open."],
+           "quarter": ["Get it used: share it in one community, answer the first issue, land one contribution in a project you depend on."]}},
+        {"id": "ai_fluency", "name": "AI fluency you can see", "weight": 12,
+         "reads": "Posts, repositories, talks, experience lines that show how they work with AI tools and agents",
+         "levels": {
+           "0": "No sign of AI in how they work, or only \"AI\" in a skills list.",
+           "1": "Mentions of daily tools (Copilot, ChatGPT, Claude) in a role description or a post.",
+           "2": "Public evidence of delegating work to AI: a published skill, agent, MCP server or workflow, with a write-up of what it does and what it saved."},
+         "plays": {
+           "week": ["Write one post: a task you gave to an AI agent this month, what came back, what you fixed."],
+           "month": ["Publish one reusable skill, prompt set or small agent on GitHub, with a README."],
+           "quarter": ["Show one result at work that AI made possible, with the number, in your experience section."]}},
+        {"id": "voice", "name": "Your voice", "weight": 10,
+         "reads": "LinkedIn activity of the last 12 months and how often they post, blog, talks, podcasts, meetup and conference pages, YouTube",
+         "levels": {
+           "0": "No posts, articles or talks of their own in the last 12 months. Reposts do not count.",
+           "1": "A few posts or one article or one meetup talk in the last 12 months.",
+           "2": "Three or more public appearances a year (talk, podcast, long article) or a steady rhythm of original posts that other people answer."},
+         "plays": {
+           "week": ["Publish one short post about something you fixed this week. Five sentences are enough."],
+           "month": ["Sign up for a ten-minute slot at a local meetup. Do not wait for an invitation."],
+           "quarter": ["One talk given, recorded if possible, and linked from your profile."]}},
+        {"id": "third_party_proof", "name": "Other people vouch for you", "weight": 10,
+         "reads": "LinkedIn recommendations (who wrote them, how recent, how specific), mentions by others, awards, accepted pull requests, co-authored work",
+         "levels": {
+           "0": "No recommendations and no mention by anyone else.",
+           "1": "One to three recommendations, older than two years or generic (\"great colleague\").",
+           "2": "Three or more specific recommendations, at least one from a manager and one from the last 18 months, or public praise from a known person or project."},
+         "plays": {
+           "week": ["Ask two people who saw your best work for a recommendation. Tell them which project to mention."],
+           "month": ["Write three recommendations for others. Most people return the favour."],
+           "quarter": []}},
+        {"id": "network", "name": "Network signals", "weight": 8,
+         "reads": "Connections and followers, community membership, who reacts to their posts, groups and meetups they belong to",
+         "levels": {
+           "0": "Fewer than about 150 connections and no visible community.",
+           "1": "About 300 to 500 connections, mostly colleagues.",
+           "2": "500+ connections across several companies, visible membership in a community (meetup group, open-source project, alumni), and decision-makers among the people who react."},
+         "plays": {
+           "week": ["Reconnect with ten people you worked with. One honest line each."],
+           "month": ["Join one community in your field and show up once."],
+           "quarter": ["List 50 people who saw your work, reactivate 10, meet 20 new ones."]}},
+        {"id": "readability", "name": "Easy to screen", "weight": 10,
+         "reads": "Completeness and consistency of the profile: skills list, dates, titles, location, education, links that work, a photo",
+         "levels": {
+           "0": "Missing sections, gaps without a line of explanation, dead links, or a skills list that does not match the roles.",
+           "1": "A complete profile: photo, location, every role dated, a skills list.",
+           "2": "Everything a first screen needs in one pass: the skills of the target role named in the roles themselves, consistent titles and dates, working links to proof, open-to-work signals set on purpose."},
+         "plays": {
+           "week": ["Fix dates, titles and dead links. Put the ten skills of your target role where you used them, inside the roles."],
+           "month": ["Ask a friend who hires to screen your profile for 60 seconds and tell you what they remembered."],
+           "quarter": []}},
+        {"id": "recency", "name": "Fresh and consistent", "weight": 6,
+         "reads": "Last activity on LinkedIn, GitHub and their own site; whether numbers, titles and dates agree across all of them (digital ambiguities)",
+         "levels": {
+           "0": "No visible activity for a year, or profiles that contradict each other.",
+           "1": "Some activity in the last six months.",
+           "2": "Activity in the last 90 days in two places, and one direction across all of them."},
+         "plays": {
+           "week": ["Update the current role and one line of what you are working on now."],
+           "month": ["Put 20 minutes a week in your calendar for your public profile."],
+           "quarter": []}}
+      ]
+    },
+    "engineering_manager": {
+      "name": "Engineering manager",
+      "detect": ["engineering manager", "head of engineering", "director of engineering", "vp engineering", "vp of engineering", "cto", "team lead", "development manager", "delivery manager"],
+      "criteria": [
+        {"id": "headline", "name": "Headline and positioning", "weight": 12,
+         "reads": "LinkedIn headline and About, personal site",
+         "levels": {
+           "0": "The headline is a bare title (\"Engineering Manager at X\"). No About text.",
+           "1": "Title plus company and a short About about the teams they lead.",
+           "2": "Domain, scope and size in one line (\"Fintech Engineering Manager, 3 teams, payments\"), and an About that names the business problem they are hired to solve."},
+         "plays": {
+           "week": ["Rewrite the headline as domain, scope and size. 20 minutes."],
+           "month": ["Write an About around one sentence: the kind of engineering organisation you build, and the result it gave the business."],
+           "quarter": []}},
+        {"id": "outcomes", "name": "Business and team outcomes", "weight": 18,
+         "reads": "LinkedIn experience entries, case studies, talks",
+         "levels": {
+           "0": "Titles, dates and responsibilities (\"managed a team\", \"responsible for delivery\").",
+           "1": "What the teams built, with some scale (team size, product).",
+           "2": "The last two roles each carry results with numbers: delivery speed, reliability, revenue or cost, attrition, hiring time, people promoted."},
+         "plays": {
+           "week": ["Add two numbers to your current role: one about the product, one about the team."],
+           "month": ["Rewrite the last two roles as outcomes a CEO or CFO would repeat."],
+           "quarter": ["Agree one measurable outcome for the next quarter with your manager, so the next update writes itself."]}},
+        {"id": "scope", "name": "Scope and its growth", "weight": 12,
+         "reads": "Team sizes, number of teams, budget, span across locations, how scope changed between roles",
+         "levels": {
+           "0": "No team size or scope anywhere.",
+           "1": "Team size stated for the current role.",
+           "2": "Scope stated for each management role and visibly growing: more teams, managers of managers, a larger budget or a harder domain."},
+         "plays": {
+           "week": ["State team size and number of teams for every management role."],
+           "month": ["Add one line on how your scope grew, and why you were given it."],
+           "quarter": []}},
+        {"id": "people_proof", "name": "People vouch for how you lead", "weight": 12,
+         "reads": "Recommendations from reports, peers and managers; public thanks; people who followed them to a new company",
+         "levels": {
+           "0": "No recommendations.",
+           "1": "A few recommendations, mostly from peers, older than two years or generic.",
+           "2": "Recent, specific recommendations from at least one direct report and one manager, naming what changed under their lead."},
+         "plays": {
+           "week": ["Ask one former report and one former manager for a recommendation about a named situation."],
+           "month": ["Write recommendations for three people you promoted or hired."],
+           "quarter": []}},
+        {"id": "ai_leadership", "name": "AI leadership you can see", "weight": 12,
+         "reads": "Posts, talks and experience lines about how their teams work with AI and agents",
+         "levels": {
+           "0": "No sign of AI in how the team works.",
+           "1": "Mentions of AI tools rolled out to the team.",
+           "2": "A public account of an AI change they led, with the result: what the team stopped doing, what got faster, what they decided not to automate."},
+         "plays": {
+           "week": ["Post one honest lesson from bringing AI into your team."],
+           "month": ["Write up one workflow your team now runs with agents, with the number it moved."],
+           "quarter": ["Give that story as a ten-minute talk at a meetup."]}},
+        {"id": "voice", "name": "Your voice", "weight": 10,
+         "reads": "LinkedIn activity of the last 12 months and how often they post, blog, talks, podcasts, panels",
+         "levels": {
+           "0": "No original posts or talks in the last 12 months.",
+           "1": "A few posts or one talk or panel in the last 12 months.",
+           "2": "Three or more public appearances a year or a steady rhythm of original posts that peers answer."},
+         "plays": {
+           "week": ["Publish one post about a decision you made this month and what it cost."],
+           "month": ["Offer a talk or a panel seat to one community."],
+           "quarter": ["One talk or podcast given and linked from your profile."]}},
+        {"id": "network", "name": "Network signals", "weight": 8,
+         "reads": "Connections and followers, community roles, who reacts to their posts",
+         "levels": {
+           "0": "A small network inside one company.",
+           "1": "500+ connections, mostly engineers they worked with.",
+           "2": "A network across companies with CTOs, founders and recruiters in it, and a visible role in a community of leaders."},
+         "plays": {
+           "week": ["Reconnect with ten people who have seen you lead."],
+           "month": ["Join one community of engineering leaders and go once."],
+           "quarter": ["List 50, reactivate 10, meet 20 new people who hire for your next role."]}},
+        {"id": "readability", "name": "Easy to screen", "weight": 8,
+         "reads": "Completeness and consistency: titles, dates, team sizes, location, links, a photo",
+         "levels": {
+           "0": "Missing sections, unclear titles, gaps without a line of explanation.",
+           "1": "A complete profile with every role dated.",
+           "2": "A first screen finds title, domain, scope and results in one pass, with working links to proof."},
+         "plays": {
+           "week": ["Fix titles, dates and links. Put scope in the first line of each role."],
+           "month": ["Ask a recruiter you trust what they remembered after 60 seconds."],
+           "quarter": []}},
+        {"id": "tech_credibility", "name": "Technical credibility", "weight": 4,
+         "reads": "Architecture decisions described, past hands-on work, technical writing or talks, published papers and patents",
+         "levels": {
+           "0": "No sign of technical depth.",
+           "1": "A hands-on past is visible in earlier roles.",
+           "2": "Recent technical judgment on show: an architecture decision explained, a technical talk or post."},
+         "plays": {
+           "week": [],
+           "month": ["Write up one technical decision you made and what you traded away."],
+           "quarter": []}},
+        {"id": "recency", "name": "Fresh and consistent", "weight": 4,
+         "reads": "Last activity on LinkedIn and their own site; whether numbers, titles and dates agree across all of them (digital ambiguities)",
+         "levels": {
+           "0": "No visible activity for a year, or profiles that contradict each other.",
+           "1": "Some activity in the last six months.",
+           "2": "Activity in the last 90 days and one direction everywhere."},
+         "plays": {
+           "week": ["Update the current role with what you are working on now."],
+           "month": ["Put 20 minutes a week in your calendar for your public profile."],
+           "quarter": []}}
+      ]
+    }
+  }
+}

@@ -1,24 +1,26 @@
 {
   "name": "engineering-leadership",
   "displayName": "Engineering Leadership",
-  "description": "Readiness assessments, salary models, 1:1 playbooks and benchmarks for engineering leaders, grounded in 3,662 mentoring sessions since 2019.",
-  "version": "1.0.0",
+  "description": "For your team and your org: delivery KPIs from your Jira data and a 6-sprint plan to fix them, your manager-to-senior-IC ratio against a peer baseline, and a go or no-go check before you launch a local leadership community. From the Engineering Leaders Community.",
+  "version": "2.0.0",
   "author": {
     "name": "Marian Kamenistak",
-    "url": "https://www.marian.coach"
+    "url": "https://www.engineeringleaders.io/"
   },
-  "homepage": "https://www.marian.coach/mcp",
+  "homepage": "https://www.engineeringleaders.io/",
   "repository": "https://github.com/marian-kamenistak/engineering-leadership-plugin",
   "license": "MIT",
+  "privacyPolicyUrl": "https://www.engineeringleaders.io/privacy/",
   "keywords": [
     "engineering-management",
-    "team-lead",
-    "career",
-    "salary",
-    "one-on-ones",
-    "leadership",
-    "mentoring",
-    "promotion"
+    "team-health",
+    "delivery-kpis",
+    "sprint-metrics",
+    "jira",
+    "org-design",
+    "manager-ratio",
+    "community",
+    "meetups"
   ],
   "skills": "./skills/"
 }

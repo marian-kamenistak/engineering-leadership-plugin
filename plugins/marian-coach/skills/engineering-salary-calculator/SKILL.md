@@ -15,7 +15,7 @@ The point is not the euro number. It's the pillar breakdown: the weakest weighte
 
 Both calculators run as MCP tools:
 
-- Endpoint: `https://www.marian.coach/mcp` (authless, streamable HTTP). The `engineering-leadership` plugin wires this up on install, so the tools are already there — nothing to configure.
+- Endpoint: `https://www.marian.coach/mcp` (authless, streamable HTTP). The `marian-coach` plugin wires this up on install, so the tools are already there — nothing to configure.
 - `calculate_developer_value` — args: `level` (junior | mid | senior | staff), optional `scores` (0-10 per skill id; omitted skills default to the level baseline: junior 3, mid 5, senior 6, staff 7).
 - `calculate_engineering_manager_value` — args: `level` (team-lead | em | senior-em | director), optional `track` (framing only), optional `scores` (same baseline idea: 3/5/6/7).
 

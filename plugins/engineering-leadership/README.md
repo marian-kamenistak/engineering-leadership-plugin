@@ -1,25 +1,43 @@
 # engineering-leadership
 
-Should I take the lead role, and what am I worth. Two skills and two open MCP servers that let
-Claude answer both properly, from 3,662 mentoring sessions with engineering leaders since 2019.
+Your team and your org. Why is the team slow, is the org top-heavy, are we ready to start a local
+leadership meetup. Three skills and two open MCP servers, from the
+[Engineering Leaders Community](https://www.engineeringleaders.io/). Author: Marian Kamenistak.
+
+## Install
+
+```
+/plugin marketplace add marian-kamenistak/engineering-leadership-plugin
+/plugin install engineering-leadership@marian-coach
+```
 
 ## Components
 
-- `skills/team-lead-readiness` — six-dimension assessment, verdict, two gaps with one move each
-- `skills/engineering-salary-calculator` — 15 skills, 5 pillars, weighted by level, 2026 European bands
-- `.mcp.json` — [`eng-leadership-toolkit`](https://www.marian.coach/mcp) (10 read-only tools) and
-  [`mentoring-inquiry-builder`](https://www.marian.coach/mcp/mentoring) (9 tools)
+- `skills/to-high-performing-team-in-6-sprints`: five delivery KPIs from your Jira CSV exports, the feedback loops behind them, a 6-sprint improvement plan and an HTML report. Needs Python 3 and pandas (`requirements.txt`)
+- `skills/leadership-ratio-benchmark`: your manager-to-senior-IC split against the community's peer baseline
+- `skills/community-launch-readiness`: five questions from the playbook used to open new cities, a verdict, the gap to close first
+- `.mcp.json`: `elc-toolkit` (`https://www.engineeringleaders.io/mcp`) and
+  `eng-leadership-toolkit` (`https://www.marian.coach/mcp`)
 
 Both servers are authless streamable HTTP. Installing the plugin connects them; there is no key
-to paste and no account to make. If they are unreachable the skills still run, because each
-carries the full scoring model in markdown.
+to paste and no account to make.
+
+The 6-sprint skill ships with empty CSV templates in `data/templates/`. The demo data lives in
+its source repo, kept out of this plugin for size:
+https://github.com/marian-kamenistak/ai-skill-to-high-performing-team-in-6-sprints
 
 ## Ask Claude
 
-"Should I become a team lead?" · "Score me as an EM." · "What should a senior backend engineer
-earn in Berlin?" · "My 1:1s are status updates." · "Write the case for my company to pay for a
-mentor."
+"Here are our Jira exports. Why is the team slow?" · "Is my engineering org too top-heavy?" ·
+"Should I start a leadership meetup in my city?"
 
-Full documentation, privacy and sources: https://github.com/marian-kamenistak/engineering-leadership-plugin
+Moved: `team-lead-readiness` and `engineering-salary-calculator` now live in the `marian-coach`
+plugin, in the same marketplace.
 
-MIT. By [Marian Kamenistak](https://www.marian.coach/).
+Privacy: https://www.engineeringleaders.io/privacy/ for `elc-toolkit`,
+https://www.marian.coach/privacy-policy/ for `eng-leadership-toolkit`.
+
+Full documentation: https://github.com/marian-kamenistak/engineering-leadership-plugin
+
+MIT. The ratio benchmark and the readiness check also run in the browser, in the
+[ELC Toolkit](https://www.engineeringleaders.io/toolkit/).

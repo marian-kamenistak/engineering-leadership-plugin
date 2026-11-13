@@ -15,7 +15,7 @@ Core position baked into the scoring, so apply it consciously: **"stay IC" is a 
 
 The calibrated 17-question test runs as an MCP tool:
 
-- Endpoint: `https://www.marian.coach/mcp` (authless, streamable HTTP). The `engineering-leadership` plugin wires this up on install, so the tools are already there — nothing to configure.
+- Endpoint: `https://www.marian.coach/mcp` (authless, streamable HTTP). The `marian-coach` plugin wires this up on install, so the tools are already there — nothing to configure.
 - Tool: `assess_team_lead_readiness`. Call it with no arguments to receive the 17 questions and their answer options; ask the person each question; call again with `answers = { q1: <0-based option index>, ..., q17: ... }` to get the verdict, dimension scores, and gap moves. Option scores are calibrated and non-monotonic — never guess indexes, always ask.
 
 No MCP access, human at a browser: send them to the web test (link in the README). Otherwise run the lightweight version below.

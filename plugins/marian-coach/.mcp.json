@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "eng-leadership-toolkit": {
+      "type": "streamable-http",
+      "url": "https://www.marian.coach/mcp"
+    },
+    "mentoring-inquiry-builder": {
+      "type": "streamable-http",
+      "url": "https://www.marian.coach/mcp/mentoring"
+    }
+  }
+}

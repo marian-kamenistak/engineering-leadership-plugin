@@ -1,26 +1,45 @@
 {
   "name": "marian-coach",
-  "description": "Plugins for engineering leaders, from Marian Kamenistak's mentoring practice at marian.coach.",
+  "description": "Plugins for engineering leaders by Marian Kamenistak: marian-coach for your own career, engineering-leadership for your team and org.",
   "owner": {
     "name": "Marian Kamenistak",
     "url": "https://github.com/marian-kamenistak"
   },
   "plugins": [
     {
+      "name": "marian-coach",
+      "source": "./plugins/marian-coach",
+      "displayName": "Marian Coach",
+      "description": "Your own career as an engineering leader: are you ready to lead, what are you worth in salary and market value, how do you look from outside, and how do you get your company to pay for mentoring. Built from 3,662 mentoring sessions with engineering leaders since 2019.",
+      "version": "1.0.0",
+      "keywords": [
+        "career",
+        "team-lead",
+        "engineering-management",
+        "salary",
+        "market-value",
+        "promotion",
+        "linkedin",
+        "personal-brand",
+        "mentoring"
+      ]
+    },
+    {
       "name": "engineering-leadership",
       "source": "./plugins/engineering-leadership",
       "displayName": "Engineering Leadership",
-      "description": "Readiness assessments, salary models, 1:1 playbooks and benchmarks for engineering leaders, grounded in 3,662 mentoring sessions since 2019.",
-      "version": "1.0.0",
+      "description": "For your team and your org: delivery KPIs from your Jira data and a 6-sprint plan to fix them, your manager-to-senior-IC ratio against a peer baseline, and a go or no-go check before you launch a local leadership community. From the Engineering Leaders Community.",
+      "version": "2.0.0",
       "keywords": [
         "engineering-management",
-        "team-lead",
-        "career",
-        "salary",
-        "one-on-ones",
-        "leadership",
-        "mentoring",
-        "promotion"
+        "team-health",
+        "delivery-kpis",
+        "sprint-metrics",
+        "jira",
+        "org-design",
+        "manager-ratio",
+        "community",
+        "meetups"
       ]
     }
   ]
