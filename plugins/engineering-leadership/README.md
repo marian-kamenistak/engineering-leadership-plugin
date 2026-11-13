@@ -14,7 +14,7 @@ leadership meetup. Three skills and two open MCP servers, from the
 ## Components
 
 - `skills/to-high-performing-team-in-6-sprints`: five delivery KPIs from your Jira CSV exports, the feedback loops behind them, a 6-sprint improvement plan and an HTML report. Needs Python 3 and pandas (`requirements.txt`)
-- `skills/leadership-ratio-benchmark`: your manager-to-senior-IC split against the community's peer baseline
+- `skills/leadership-ratio-benchmark`: your manager-to-senior-IC split and the one structural question it should prompt
 - `skills/community-launch-readiness`: five questions from the playbook used to open new cities, a verdict, the gap to close first
 - `.mcp.json`: `elc-toolkit` (`https://www.engineeringleaders.io/mcp`) and
   `eng-leadership-toolkit` (`https://www.marian.coach/mcp`)

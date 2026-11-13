@@ -53,7 +53,7 @@ Then ask Claude something like:
 | `marian-coach` | `one-on-one-with-manager` | What do I bring to my next 1:1 with my manager? One page: the opening line, the one ask, the evidence, the likely pushback and the follow-up note |
 | `marian-coach` | `convince-your-manager` | How do I get my company to pay for mentoring? The email, a Slack version, talking points and a one-pager for finance, in English or Czech |
 | `engineering-leadership` | `to-high-performing-team-in-6-sprints` | Why is the team slow? Five delivery KPIs from your Jira CSV exports, the feedback loops behind them, and a 6-sprint plan with an HTML report |
-| `engineering-leadership` | `leadership-ratio-benchmark` | Is the org top-heavy? Your manager-to-senior-IC split against a peer baseline, and the question the gap should make you ask |
+| `engineering-leadership` | `leadership-ratio-benchmark` | Is the org top-heavy? Your manager-to-senior-IC split and the one question that shape should make you ask |
 | `engineering-leadership` | `community-launch-readiness` | Should I start a leadership meetup in my city? Five questions from the playbook used to open new cities, a verdict, and the gap to close first |
 
 And the MCP servers, the data and the calculators behind the skills:
