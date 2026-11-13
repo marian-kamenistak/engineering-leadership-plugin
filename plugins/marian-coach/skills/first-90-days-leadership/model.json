@@ -1,0 +1,297 @@
+{
+  "version": "1.0",
+  "date": "2026-11-13",
+  "tracks": {
+    "lead": {
+      "roles": [
+        "tl",
+        "em"
+      ],
+      "name": "Team lead / Engineering Manager",
+      "contract": "In three months, I'll embrace the new dev team, complete an internal audit, and present my battle plan.",
+      "months": [
+        "Understand and support the team",
+        "Improve the team's performance",
+        "Present the audit and the plan, and check your added value"
+      ],
+      "before_day_1": null,
+      "weeks": [
+        {
+          "n": 1,
+          "focus": "Build relationships",
+          "do": "Two catch-ups a week with your manager. Informal face time with every peer and every report. Go to every ceremony.",
+          "line": "If you don't have relationships, you'll fail."
+        },
+        {
+          "n": 2,
+          "focus": "Learn the territory",
+          "do": "Product strategy (ask the product lead why, not what), business model, how the company makes money, one or two customers.",
+          "line": "Differentiate yourself by showing a genuine interest in the product and business."
+        },
+        {
+          "n": 3,
+          "focus": "Set realistic expectations",
+          "do": "Check the roadmap dates against what the team really delivered. Ask how, not whether.",
+          "line": "How can we accomplish XYZ within this timeframe? If it's not feasible, what alternatives can we explore?"
+        },
+        {
+          "n": 4,
+          "focus": "Team charter",
+          "do": "Purpose, how to reach the team, roadmap, current load, where knowledge lives. End-of-month-1 check-in with your manager.",
+          "line": "The team charter protects you from becoming a yes-man."
+        },
+        {
+          "n": 5,
+          "focus": "How the company works",
+          "do": "Trace one feature from idea to customer: processes, tools, OKRs, who decides. Check the channels: public issues, private matters, escalations.",
+          "line": "If you're not familiar with how the company operates, you won't be able to see the bigger picture."
+        },
+        {
+          "n": 6,
+          "focus": "Internal audit",
+          "do": "Last three sprints and two quarters: share of time on the roadmap, backlog, stalled delivery, roadmap visibility, people.",
+          "line": "Teams often spend 60% of their time on non-roadmap tasks, delivering only half of what's planned."
+        },
+        {
+          "n": 7,
+          "focus": "One small improvement",
+          "do": "Pick one minor inefficiency from the audit and fix it with the team.",
+          "line": "Don't be the person making changes in the first week to assert your authority."
+        },
+        {
+          "n": 8,
+          "focus": "Strengthen relationships",
+          "do": "Help each person on the team make one small improvement. Day-60 check-in with your manager.",
+          "line": "Support those around you. Without it, connections grow cold."
+        },
+        {
+          "n": 9,
+          "focus": "Company-wide contracts",
+          "do": "Ask for the career framework, promotion, layoff and hiring criteria, escalation rules, and when a bug counts as a blocker.",
+          "line": "Clearly defining contracts will significantly reduce disruptions for your team."
+        },
+        {
+          "n": 10,
+          "focus": "Present the audit",
+          "do": "Two quarters of delivery in numbers, the disruptions, roadmap vs business-as-usual. The two most critical areas and a timeline. Walk the key people one by one before the meeting.",
+          "line": "Let me handle this; I'll make the call."
+        },
+        {
+          "n": 11,
+          "focus": "Start on the larger issue",
+          "do": "Start the first of the two areas. Ask the team for input; you decide the order.",
+          "line": "Be a change agent."
+        },
+        {
+          "n": 12,
+          "focus": "Close the loop",
+          "do": "Day-90 meeting with your manager: what you found, why these priorities, what you propose. Then ask yourself whether you add value.",
+          "line": "Here's what I've discovered, why these priorities matter, and the proposal I recommend. Are you on board?"
+        }
+      ],
+      "checkins": {
+        "month_1": 4,
+        "day_60": 8,
+        "day_90": 12
+      },
+      "audit_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "exec": {
+      "roles": [
+        "director",
+        "vp",
+        "cto"
+      ],
+      "name": "Director / VP / CTO",
+      "contract": "In three months, I'll know the strategy end to end, publish my audit, and bring a costed proposal my manager can say yes to.",
+      "months": [
+        "Listen",
+        "Audit and diagnose",
+        "Propose, agree, and set the next quarter"
+      ],
+      "before_day_1": [
+        {
+          "n": 1,
+          "topic": "Strategy",
+          "do": "Sit with your manager (and the board if there is one) and understand next year's strategy end to end. Just listen."
+        },
+        {
+          "n": 2,
+          "topic": "KPIs",
+          "do": "Propose the KPIs yourself and write your own definition of success, so the review in 12 months is not a fight of opinions."
+        },
+        {
+          "n": 3,
+          "topic": "Resources",
+          "do": "Agree time, people, tooling and budget in the same room, with the same people, as the KPIs."
+        },
+        {
+          "n": 4,
+          "topic": "Mandate",
+          "do": "Say it out loud: this is my territory, my org structure, my processes, the way we communicate. Agreement in the room is the mandate. Hesitation is data."
+        },
+        {
+          "n": 5,
+          "topic": "Compensation",
+          "do": "Last, once you know what the job really is. After you say yes you have nothing left to trade."
+        }
+      ],
+      "weeks": [
+        {
+          "n": 1,
+          "focus": "Your manager and your peers",
+          "do": "Weekly 1:1 with your manager. One conversation with every peer: what would make you a success from their side.",
+          "line": "Just listen to it, listen to what they say."
+        },
+        {
+          "n": 2,
+          "focus": "Your reports and the level below",
+          "do": "1:1 with every direct report, skip-levels with the level below. Write down what you hear, no answers yet.",
+          "line": "After the first eight conversations you'll hear the same four problems in different words."
+        },
+        {
+          "n": 3,
+          "focus": "The business",
+          "do": "Where the revenue comes from, what the roadmap promises and to whom, what a quarter of delay costs in money.",
+          "line": "Understand the business model and the roadmap before you have an opinion on either."
+        },
+        {
+          "n": 4,
+          "focus": "The four problems",
+          "do": "Twenty to thirty conversations in total. Write the four problems you heard most. End-of-month-1 check-in: what you heard, no solutions yet.",
+          "line": "That list is the start of your roadmap proposal."
+        },
+        {
+          "n": 5,
+          "focus": "How work flows",
+          "do": "Trace idea to customer across teams. Check which of your proposed KPIs the data can already show.",
+          "line": "If you're not familiar with how the company operates, you won't see the bigger picture."
+        },
+        {
+          "n": 6,
+          "focus": "Internal audit",
+          "do": "Across teams: share of time on the roadmap, sprint completion, cycle time, stalled delivery, people risks, org structure against your mandate.",
+          "line": "Quick wins and big stones."
+        },
+        {
+          "n": 7,
+          "focus": "One quick win",
+          "do": "One small, visible fix inside your own territory, owned by one of your leads.",
+          "line": "Don't make big changes yet: no reorg, no platform migration."
+        },
+        {
+          "n": 8,
+          "focus": "Audit draft",
+          "do": "Sort findings into quick wins and big stones. Stakeholder map. Day-60 check-in with your manager on the draft.",
+          "line": "Two months of listening felt slow at the time. It was the cheapest thing I did that year."
+        },
+        {
+          "n": 9,
+          "focus": "Costed proposal",
+          "do": "Three to five changes, each with a cost, a time horizon and the business number it moves.",
+          "line": "A proposal, as opposed to a rewrite plan."
+        },
+        {
+          "n": 10,
+          "focus": "Walk the decision makers",
+          "do": "One by one before the meeting, then a pre-read. Lead with the payoff, then the dip, and bring any cut as options.",
+          "line": "Plan a decision meeting from its end."
+        },
+        {
+          "n": 11,
+          "focus": "Decide",
+          "do": "The decision meeting. Name the two or three mission streams for next quarter and their owners.",
+          "line": "Be brave enough to enter conflict over finite resources."
+        },
+        {
+          "n": 12,
+          "focus": "Close the loop",
+          "do": "Day-90 meeting with your manager against the KPIs and definition of success you wrote. Big changes start next quarter.",
+          "line": "Here's what I've discovered, why these priorities matter, and the proposal I recommend. Are you on board?"
+        }
+      ],
+      "checkins": {
+        "month_1": 4,
+        "day_60": 8,
+        "day_90": 12
+      },
+      "audit_weeks": [
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  },
+  "readiness": [
+    {
+      "id": "success",
+      "item": "Definition of success at 3 and 6 months, written down and agreed with your manager"
+    },
+    {
+      "id": "manager",
+      "item": "Recurring time with your manager in the calendar (twice a week in month 1 for a lead, weekly for an exec)"
+    },
+    {
+      "id": "people",
+      "item": "A list of every peer and stakeholder, with what success looks like from each one's side"
+    },
+    {
+      "id": "one_on_ones",
+      "item": "A first 1:1 with every direct report booked in weeks 1 and 2"
+    },
+    {
+      "id": "audit",
+      "item": "One to two days a week blocked for the audit"
+    },
+    {
+      "id": "day90",
+      "item": "Day 90 in the calendar, with the close-the-loop meeting booked"
+    },
+    {
+      "id": "support",
+      "item": "A buddy or a mentor named, inside or outside the company"
+    },
+    {
+      "id": "track",
+      "lead": "The hard conversation you would rather avoid, named, with a date in month one",
+      "exec": "The five conversations done, and the mandate said out loud and agreed"
+    }
+  ],
+  "readiness_names": [
+    {
+      "max": 2,
+      "name": "Fresh start"
+    },
+    {
+      "max": 4,
+      "name": "Getting set"
+    },
+    {
+      "max": 6,
+      "name": "Nearly packed"
+    },
+    {
+      "max": 7,
+      "name": "One to go"
+    },
+    {
+      "max": 8,
+      "name": "Ready for day 1"
+    }
+  ],
+  "team_health_targets": {
+    "source": "Marian Kamenistak's published team-health thresholds (eng-leadership-toolkit MCP)",
+    "sprint_completion": "80% or more",
+    "roadmap_share": "60% or more of the team's time",
+    "manager_time_per_report": "10 to 15% of your week per direct report",
+    "team_satisfaction": "8 out of 10"
+  }
+}

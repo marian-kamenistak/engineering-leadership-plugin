@@ -1,0 +1,173 @@
+{
+  "version": "1.0",
+  "date": "2026-11-13",
+  "scale": "Each criterion is scored 0, 0.5, 1, 1.5 or 2 against written anchors. Case score = 5 x weighted average, 0 to 10. The weights and the four steps are a design, not fitted to data.",
+  "levels": {"0": "not visible yet", "0.5": "a first sign", "1": "there", "1.5": "ahead", "2": "strong"},
+  "criteria": [
+    {
+      "id": "outcomes",
+      "name": "Outcomes with numbers",
+      "weight": 25,
+      "question": "What changed in the last 12 months because of you? For each: the number before, the number after, and who outside your team noticed.",
+      "levels": {
+        "0": "Projects, tasks, activity. \"I worked on\", \"I was responsible for\". Or a problem with no result yet.",
+        "1": "At least one outcome with a before and an after number, or a change the business names without you (a report that stopped, a complaint that ended).",
+        "2": "Three or more outcomes, each with a number and what the business got from it (money, time, risk, customers). People outside the team name them without you in the room."
+      },
+      "moves": {
+        "month": "Pick your two biggest pieces of work and find the before and after number for each. Ask the PM or finance for the business side.",
+        "quarter": "Agree one measurable outcome with your manager now, so the next review writes itself."
+      }
+    },
+    {
+      "id": "next_level",
+      "name": "The next level, already done",
+      "weight": 25,
+      "question": "Which of the next level's signals (see tracks) can you show today, with a date and a person who saw it?",
+      "levels": {
+        "0": "Fewer than two signals of the next level have evidence. The case rests on doing the current job well.",
+        "1": "About half of the next level's signals have evidence, each with an example and a date.",
+        "2": "All signals but at most one have evidence, kept up for months, and at least one was seen by someone above your manager."
+      },
+      "moves": {
+        "month": "Take the next level's missing signal that is cheapest to show and do it once, where your manager can see it.",
+        "quarter": "Turn that signal into a habit: three times in a quarter, not once."
+      }
+    },
+    {
+      "id": "scope",
+      "name": "Scope and its growth",
+      "weight": 15,
+      "question": "What did you own when you got your current title, and what do you own now? People, systems, teams, budget, decisions.",
+      "levels": {
+        "0": "The same scope as when you got the current title.",
+        "1": "Scope grew, and you can say what was added and when.",
+        "2": "For six months or more you have carried most of the next level's scope, and the people around you treat it as yours."
+      },
+      "moves": {
+        "month": "Write your scope twice: when you got the title and today. Show it to your manager and ask if it matches theirs.",
+        "quarter": "Ask for one piece of the next level's scope that nobody owns today."
+      }
+    },
+    {
+      "id": "decisions",
+      "name": "Decisions and proposals",
+      "weight": 10,
+      "question": "Which open decision did you close, and which proposal did you bring that nobody asked for?",
+      "levels": {
+        "0": "You deliver what was agreed. No decision closed or proposal made by you.",
+        "1": "One decision unblocked or one proposal made in the last six months: options, a recommended default, a date.",
+        "2": "Several, including one proposal nobody asked for (a number, a problem, a bet), each written down with what was decided and who owns it."
+      },
+      "moves": {
+        "month": "Find the decision your team has left open for weeks. Write a one-pager: three options, your default, a date. Get the two people who disagree into one room.",
+        "quarter": "Bring one proposal nobody asked for to a leadership meeting: a number, a problem, a bet."
+      }
+    },
+    {
+      "id": "vouch",
+      "name": "People who vouch",
+      "weight": 15,
+      "question": "Who would tell the decider, unprompted, what you did? What did each of them see?",
+      "levels": {
+        "0": "Nobody named, or only \"people like working with me\".",
+        "1": "One or two named people who saw specific work, wherever they sit.",
+        "2": "Three or more named people, at least one outside your team or one level above your manager, who saw specific work and know you are going for the next level."
+      },
+      "moves": {
+        "month": "Name three people who saw your best work. Tell each of them what you are going for and ask what they saw.",
+        "quarter": "Do one piece of work with a leader outside your team, so a second voice exists."
+      }
+    },
+    {
+      "id": "manager",
+      "name": "Your manager has a stake",
+      "weight": 10,
+      "gate": true,
+      "question": "Does your manager know what you are going for, and what did they say they need to see, by when?",
+      "levels": {
+        "0": "Your manager does not know you want the next level.",
+        "0.5": "Your manager heard a general interest once (\"I'm interested in management\"), without the target level or a date.",
+        "1": "Your manager knows the target level and roughly when, but you have not agreed what they need to see.",
+        "2": "You asked \"what would you need to see from me by <date>?\", got a short list, and check progress against it in your 1:1s."
+      },
+      "moves": {
+        "month": "In your next 1:1: \"I want to go for <level>. What would you need to see from me by <month>?\" Write the answer down and send it back to them.",
+        "quarter": "Check the list once a month in your 1:1. No surprises at review time."
+      }
+    }
+  ],
+  "steps": [
+    {"step": 1, "below": 4.0, "name": "Quiet work", "line": "The work may well be real. The case cannot see it yet."},
+    {"step": 2, "below": 6.0, "name": "On the runway", "line": "The evidence is building. Agree the criteria and the date, then keep going."},
+    {"step": 3, "below": 8.0, "name": "Almost there", "line": "Close the top gap, then ask."},
+    {"step": 4, "below": 10.01, "name": "Ready to ask", "line": "Ask, show the evidence, then stop talking."}
+  ],
+  "gate": "If 'manager' is below 1, the step is capped at 3 (Almost there): a manager who hears about it for the first time at the promotion conversation has no evidence and no stake. The first conversation is the early ask, not the promotion ask.",
+  "tracks": {
+    "to_mid": {
+      "name": "Junior to mid-level engineer",
+      "signals": [
+        "Breaks big problems into small, valuable increments",
+        "Asks product the why behind what ships",
+        "Helps people in other teams",
+        "Owns a piece of functionality from idea to production to the customer"
+      ],
+      "trap": "Lack of workflow ownership: you have built parts, never carried one piece end to end."
+    },
+    "to_senior": {
+      "name": "Mid-level to senior engineer",
+      "signals": [
+        "Multiplier effect: was the buddy of a new starter, or helped someone reach their delivery goals",
+        "Brings thought-through proposals on their own",
+        "Pairs and shares knowledge instead of taking the exciting feature alone",
+        "Proof of a process improvement the team still uses",
+        "Asked for a learning budget (course, conference) in the last 12 months and shared what came back"
+      ],
+      "trap": "Impressive alone. Being strong solo does not make you senior; the multiplier effect does."
+    },
+    "to_staff": {
+      "name": "Senior to staff or principal engineer",
+      "signals": [
+        "Communicates well enough that people outside engineering follow the technical argument",
+        "Owns and executes part of the technical roadmap",
+        "Leads an internal community of practice and keeps it active",
+        "Speaks in public (meetup, podcast, conference) at least twice a year",
+        "Colleagues from other teams seek their input"
+      ],
+      "trap": "Working solo in the corner: the multiplier effect is missing."
+    },
+    "to_lead": {
+      "name": "Senior engineer or tech lead to team lead or engineering manager",
+      "signals": [
+        "Closed an epic that was slipping: took it over, cut what would not be missed, finished it",
+        "Delivered value the business names without you in the room",
+        "Closed a decision that had been open for weeks: one-pager, three options, a default, a date, owners written down",
+        "Has done the people part already (1:1s, feedback, onboarding) and prefers it over coding"
+      ],
+      "trap": "Internal refactors offered as the main evidence. Good engineering, weak evidence. And the stay-IC signal: if you prefer coding over taking care of people, say so before building the case."
+    },
+    "to_director": {
+      "name": "Engineering manager to senior EM, director or VP",
+      "signals": [
+        "Argued a position that cost your own team something and helped the department, out loud",
+        "Brought a proposal that was not on the agenda or the roadmap: a number, a problem, a bet",
+        "Acted on a piece of hard feedback where people could see it",
+        "Leaders above you have seen you argue for the whole department, not only your team"
+      ],
+      "trap": "Flawless execution of someone else's roadmap. The EM who executes perfectly is invisible at promotion time.",
+      "self_test": [
+        "Did I argue any position that cost my team something?",
+        "Did I bring anything that wasn't already on the agenda or the roadmap?",
+        "What did I do with the last piece of hard feedback I received, and who saw me do it?"
+      ],
+      "new_seat": [
+        "Listen to the strategy end to end, with your manager and the people above",
+        "Propose the KPIs yourself and write your own definition of success",
+        "Agree the resources those KPIs need, in the same room",
+        "Get the mandate over your territory said out loud",
+        "Compensation last"
+      ]
+    }
+  }
+}
