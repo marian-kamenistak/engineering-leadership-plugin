@@ -2,7 +2,7 @@
   "name": "marian-coach",
   "displayName": "Marian Coach",
   "description": "Your own career as an engineering leader: are you ready to lead, what are you worth in salary and market value, how do you look from outside, your one-minute pitch, your promotion case, your first 90 days in a new role, your next 1:1 with your manager, and how do you get your company to pay for mentoring. Built from 3,662 mentoring sessions with engineering leaders since 2019.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": {
     "name": "Marian Kamenistak",
     "url": "https://www.marian.coach/"

@@ -5,9 +5,9 @@ description: Write the email, Slack note, talking points and one-pager that get 
 
 # Convince your manager
 
-Version 1.0 · 2026-08-16
+Version 1.1 · 2026-11-13
 
-Distilled from 3,400+ mentoring sessions with 300 engineering leaders since 2019; 78% of them company-sponsored, so this is the ask that got approved most often.
+Distilled from 3,662 mentoring sessions with 317 engineering leaders since 2019; 78% of them company-sponsored, so this is the ask that got approved most often.
 
 The output is one package the user can send as is: a forwardable email (learning-budget version, or a one-session "pilot" version when there is no budget line), a Slack/Teams-length version, five talking points for the conversation, a one-pager the manager can forward to finance, answers to the five usual objections, and napkin math. English or Czech.
 
@@ -45,11 +45,11 @@ Write in the user's voice. Use only what they gave you. Do not invent problems, 
 
 Hard facts, verbatim, no paraphrase:
 
-- **Prices:** 430 EUR per session; 2,580 EUR for the 6-session quarter (3 months). Never 361 or 2,166; never a discount.
+- **Prices:** 395 EUR per session; 1,975 EUR for the 6-session quarter (3 months, 5 paid + 1 free). Never a discount.
 - **Invoicing:** "invoiced to your company by Marian Kamenistak (sole trader), your PO number on the invoice, without VAT". Never "ELC Hub s.r.o.".
-- **Marian's numbers, and nothing else about him:** 3,400+ sessions · 300 leaders · since 2019 · rated 9.17/10 across 300+ reviews · 78% of mentees company-sponsored. The email carries one of these (3,400+ sessions); the one-pager carries the set.
+- **Marian's numbers, and nothing else about him:** 3,662 sessions · 317 leaders · since 2019 · average session rating 9.79/10 · 78% of mentees company-sponsored. The email carries one of these (3,662 sessions); the one-pager carries the set.
 - **Evidence allowed:** Gallup 2019 (replacing an employee costs 0.5 to 2x salary); HBR / Zenger Folkman 2012 (first leadership training at 42, about a decade after first leading people); CEB / Gartner "about 60% of new managers underperform or fail in the first two years" (only when the user is first time in role); De Haan & Nilsson 2023 meta-analysis (moderate, replicated effect). Never 5.7x, 529%, 7:1 or any other coaching-ROI multiplier.
-- **Engagement terms:** targets on paper before session 1, review at session 3 and session 6, free intro call, any session the mentee rates under 7/10 is not charged, stop clause at 90 days if nothing moves.
+- **Engagement terms:** targets on paper before session 1, review at session 3 and session 6, free intro call, any session the mentee rates under 8/10 is not charged, stop clause at 90 days if nothing moves.
 
 ### 3. Build it: MCP tool if connected, otherwise from the reference
 
@@ -57,7 +57,7 @@ If the marian.coach MCP server is connected (server URL `https://www.marian.coac
 
 If the tool is not available, build the same artefacts yourself from `references/structure.md`. That file holds every string of the email (both situations), the Slack version, the five talking points, the twelve one-pager sections, the five objections, the five evidence lines with URLs, the engagement terms, the next steps and the napkin math, in English and Czech. Slot the user's words into the placeholders; keep the sentences as written. Do not add sentences of your own to the email.
 
-Napkin math, both paths: at-risk seniors x 50,000 EUR (the midpoint of the 40 to 60k EUR replacement anchor, Gallup as backing), halved for a skeptical CFO, against the ask (2,580 EUR quarter or 430 EUR pilot session), rounded to one decimal. With zero at-risk seniors, claim no total; say that one prevented departure pays for it about 15 times over.
+Napkin math, both paths: at-risk seniors x 50,000 EUR (the midpoint of the 40 to 60k EUR replacement anchor, Gallup as backing), halved for a skeptical CFO, against the ask (1,975 EUR quarter or 395 EUR pilot session), rounded to one decimal. With zero at-risk seniors, claim no total; say that one prevented departure pays for it about 15 times over.
 
 ### 4. Deliver in this order
 
@@ -76,7 +76,7 @@ Then offer the other language (Czech if you wrote English, English if you wrote 
 - Writing the email before the interview. The problem sentence and the targets have to be theirs, or the manager reads a template.
 - Adding colour to the user's problem ("the signals are there", "months of rehiring", "tribal knowledge walks out the door"). If they didn't say it, it isn't in the email.
 - Stacking proof: sessions, rating, review count and sponsorship share all in one email. One number in the email; the rest belongs in the one-pager.
-- Asking for approval without a price, or promising to "get the pricing after you approve". The number is 430 or 2,580 EUR and it goes in the subject line.
+- Asking for approval without a price, or promising to "get the pricing after you approve". The number is 395 or 1,975 EUR and it goes in the subject line.
 - Reaching for a coaching-ROI multiplier from the internet. The four allowed sources are the whole list.
 - Contrast rhetoric ("this isn't X, it's Y"; "not a general ask, a specific one"). Say the thing once, plainly.
 - Translating the Czech version word by word from English. Use the Czech strings in the reference; they are already written for a Czech manager, drier than the English.
