@@ -1,6 +1,6 @@
 ---
 name: digital-footprint-multiplier
-description: Score how a software developer or an engineering manager looks to a recruiter, a hiring manager or an AI screening tool, from public evidence only. Input is one LinkedIn profile URL; the skill reads the profile in the user's own Chrome, researches the open web (GitHub, talks, posts, podcasts, mentions), and returns a multiplier from 0.4 to 1.7 where 1.0 is a typical 2026 profile, the evidence behind every criterion, and an upbeat plan for the next week, month and quarter. Use it whenever someone shares a LinkedIn link and asks "how do I look online", "score my profile", "digital footprint", "will I pass AI screening", "audit my LinkedIn or GitHub before I apply", "what should I fix before a promotion or a job search", or asks for /digital-footprint-multiplier, even if they never say the word multiplier. NOT for the self-reported twelve-step score (use market-value-multiplier), and NOT for writing the LinkedIn posts themselves.
+description: "Score how a developer or EM looks to recruiters and AI screening from public evidence (LinkedIn URL): multiplier 0.4-1.7 plus plan. Triggers: \"how do I look online\", \"digital footprint\", \"will I pass AI screening\". NOT for salary."
 ---
 
 # digital-footprint-multiplier
@@ -41,7 +41,7 @@ Run it on the person who asked, or on someone who knows and agreed (a mentee, a 
 
 Stay inside professional, public material. Leave out anything about health, family, religion, politics, home address, or other people who appear on the profile.
 
-## What you need
+## Inputs
 
 | Input | If missing |
 |---|---|
@@ -51,7 +51,7 @@ Stay inside professional, public material. Leave out anything about health, fami
 
 When an aim is given, the score still describes today, but the plan serves the aim: check whether the headline, About and Featured carry the words of that aim and link to its proof (a speaker page for speaking work, a case study for a fractional seat), prefer plays that move the aim, and list the aim's own gaps under "Before you apply".
 
-## Workflow
+## Steps
 
 ### 1. Read the LinkedIn profile, in the user's own Chrome
 
@@ -69,11 +69,15 @@ Copy the exact lines you will cite (headline, a result line, a recommendation's 
 
 When the profile is the user's own, LinkedIn also shows blocks only the owner sees (analytics, "who viewed you", recruiter-only settings). Ignore them: a stranger cannot see them, so they are not footprint.
 
+→ verify: the cited lines are copied exactly, the period of posts you could read is written down, and the tab is closed.
+
 ### 2. Research the open web
 
 Details and search patterns: `references/research.md`. In short: confirm identity first (two matching signals: employer, city, photo, a link from LinkedIn), then look for code, products, talks, podcasts, articles, mentions and community roles. Keep every URL.
 
 Paid research tools the user has connected (Firecrawl, DataForSEO, Exa and similar) are welcome when they find what plain search cannot. Ask once before the first paid call unless the user has already allowed it, keep one run under about 25 paid calls, and name what was spent in the report.
+
+→ verify: identity is confirmed by two matching signals and every URL is kept.
 
 ### 3. Pick the criteria and score
 
@@ -93,6 +97,8 @@ python3 scripts/score.py --selftest
 
 The script refuses a score without evidence. It returns the multiplier, its named step, what one level up is worth for each criterion, and the projection for the plan.
 
+→ verify: `python3 scripts/score.py --selftest` passes, and the script accepted the scores JSON (it refuses a score without evidence).
+
 ### 4. Build the plan
 
 Take the three criteria where reaching the next anchor is worth the most (the script lists them), and pick plays from `model.json` (adapt the wording to this person; invent nothing about them). Sort them by time:
@@ -104,9 +110,11 @@ Take the three criteria where reaching the next anchor is worth the most (the sc
 
 Put the planned levels into `plan` in the JSON so the script prints the projection: today, after the week, after the month, after the quarter. Count a step in the period when it pays off, not when it starts: a recommendation requested this week and received next month belongs to the month.
 
+→ verify: the plan has at least two "This week" items, and the projection line prints from the `plan` levels in the JSON.
+
 ### 5. Write the report
 
-ALWAYS use this structure:
+Use this structure:
 
 ```markdown
 # <First name>, your digital footprint: <M.MM>x · <step name> (step <n> of 9)
@@ -138,6 +146,8 @@ Evidence only, read on <date>. Sources: LinkedIn plus <n> public pages. Paid res
 
 Show the report in the chat. Save it to a file only when the user asks, and never publish a report about a named person.
 
+→ verify: the report has every section of the structure, and the draft is shown in the chat.
+
 ## Tone: "yes, I can do that"
 
 The reader should finish the report wanting to open LinkedIn, not close the laptop.
@@ -165,3 +175,30 @@ Founders, fractional leaders, consultants and mentors use the manager profile, r
 ## Calibration
 
 The level "typical for 2026" is defined by written anchors, not by a dataset of scored profiles, and the shares of the nine steps are the bell curve's, not counted. Keep each run's scores JSON. After about 30 real runs, compare the median level per criterion with 1 and the share of runs in each step with the table above, rewrite the anchors that sit far from it; note the change and the date in `model.json`.
+
+## Output
+
+The report from step 5, shown in the chat: headline with multiplier, step name and step number, what already works, the score table, the plan with projection, what could not be seen, and the method line. A scores JSON file for the run (keep it for calibration). A saved report only when the user asks.
+
+## Done when
+
+- `python3 scripts/score.py` ran on the scores JSON, and the multiplier in the report is the script's number.
+- Every level above 0 has a quoted line or URL; every level 0 lists the places looked.
+- The plan has "This week" (at least two), "This month", "This quarter" and "Before you apply", with the projection line.
+- The report says the number is visibility of proof, not skill or pay.
+
+## Rules
+
+- Run it only on the person who asked or someone who agreed, because a footprint report on someone behind their back becomes a file about them.
+- Read LinkedIn only (no connect, follow, message, like or endorse) and open one profile per run, because the visit shows in "who viewed your profile".
+- Never type credentials: on a login wall, stop and ask the user to log in.
+- Do the arithmetic in `scripts/score.py`, never in your head, because the script enforces evidence and the null-criteria rule.
+- Quote the nine-step shares as "by design", never as a fact about a person.
+- Paid research: ask once before the first paid call, unless already allowed, and stay under about 25 paid calls per run.
+- Do not publish a report about a named person.
+
+## References
+
+- `model.json`: read before scoring; role profiles, criteria, weights, anchors, plays, the nine steps.
+- `references/research.md`: read at step 2 for open-web search patterns.
+- `scripts/score.py`: the scoring arithmetic (`python3 scripts/score.py <role> <scores.json>`).

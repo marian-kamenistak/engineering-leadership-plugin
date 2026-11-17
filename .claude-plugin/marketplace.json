@@ -7,11 +7,29 @@
   },
   "plugins": [
     {
+      "name": "grow-your-value",
+      "source": "./plugins/grow-your-value",
+      "displayName": "Grow Your Value",
+      "description": "Two scores for an engineering leader or developer who wants to earn more. VMS (Value Multiplicator Score): twelve weighted steps give your market value from 0.4 to 1.7 and the three steps that raise it most. Digital footprint score: give it a LinkedIn profile URL and it scores how you look to a recruiter, a hiring manager or an AI screening tool, from public evidence only, with a plan.",
+      "version": "1.0.0",
+      "keywords": [
+        "career",
+        "salary",
+        "market-value",
+        "vms",
+        "linkedin",
+        "digital-footprint",
+        "personal-brand",
+        "engineering-management",
+        "developer"
+      ]
+    },
+    {
       "name": "marian-coach",
       "source": "./plugins/marian-coach",
       "displayName": "Marian Coach",
       "description": "Your own career as an engineering leader: are you ready to lead, what are you worth in salary and market value, how do you look from outside, your one-minute pitch, your promotion case, your first 90 days in a new role, your next 1:1 with your manager, and how do you get your company to pay for mentoring. Built from 3,662 mentoring sessions with engineering leaders since 2019.",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "keywords": [
         "career",
         "team-lead",

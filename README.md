@@ -1,9 +1,13 @@
 # Engineering Leadership plugins for Claude
 
-Two free plugins for Claude, one marketplace.
+Three free plugins for Claude, one marketplace.
 
 **`marian-coach`** is about you. Should I take the lead role, what am I worth, how do I look to
 a recruiter who looks me up, and how do I get my company to pay for a mentor.
+
+**`grow-your-value`** is two scores and nothing else: your VMS (Value Multiplicator Score), your
+market value from 0.4 to 1.7, and your digital footprint score from one LinkedIn URL. Both skills
+also ship in `marian-coach`; install this one if the scores are all you want.
 
 **`engineering-leadership`** is about your team and your org. Why is the team slow, is the org
 top-heavy, are we ready to start a local leadership meetup.
@@ -18,6 +22,7 @@ In Claude Code, add this repository as a marketplace, then install one plugin or
 ```
 /plugin marketplace add marian-kamenistak/engineering-leadership-plugin
 /plugin install marian-coach@marian-coach
+/plugin install grow-your-value@marian-coach
 /plugin install engineering-leadership@marian-coach
 ```
 
@@ -31,6 +36,7 @@ Then ask Claude something like:
 - "Should I become a team lead?"
 - "What should a senior backend engineer earn in Berlin?"
 - "I'm an EM going for director. What am I worth and what do I fix first?"
+- "What is my VMS?"
 - "Here's my LinkedIn. How do I look to a recruiter?"
 - "Write the case for my company to pay for a mentor."
 - "Here are our Jira exports. Why is the team slow?"

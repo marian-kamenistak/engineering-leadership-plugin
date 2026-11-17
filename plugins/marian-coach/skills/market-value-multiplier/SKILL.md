@@ -1,6 +1,6 @@
 ---
 name: market-value-multiplier
-description: Score an engineering leader's market value as a multiplier from 0.4 to 1.7 across twelve weighted steps (direction, title, target companies, one-minute pitch, digital footprint, network, public speaking, AI level, outcome language, interview practice, negotiation, first months), and apply it to a base salary for an Engineering Manager, Engineering Director, VP of Engineering or CTO in Central Europe. Use whenever someone asks "what am I worth", "how do I double my salary", "why do I get no replies to my applications", "am I ready for a director or VP role", wants a job-search or promotion plan, shares a CV or LinkedIn profile for a market check, or mentions the 12 steps to a higher salary, even if they never say the word "multiplier".
+description: "Scores an engineering leader's market value as a 0.4-1.7 multiplier across twelve weighted steps and applies it to a base salary (EM to CTO, Central Europe). Triggers on \"what am I worth\", \"how do I double my salary\", \"12 steps to a higher salary\". Does NOT trigger for a LinkedIn footprint audit (use /digital-footprint-multiplier) or promotion cases (use /engineering-promotion-case)."
 ---
 
 # market-value-multiplier
@@ -18,7 +18,7 @@ It does two jobs:
 
 The model (steps, weights, level descriptions, base salaries and their sources) is in `model.json` beside this file. Read it before scoring; do not rephrase the level descriptions from memory.
 
-## What you need
+## Inputs
 
 | Input | Why | If missing |
 |---|---|---|
@@ -28,7 +28,9 @@ The model (steps, weights, level descriptions, base salaries and their sources) 
 
 Senior and staff engineers can use it too: score them against the Engineering Manager base and say that the base is for a manager.
 
-## How to ask
+## Steps
+
+### 1. Ask the questions
 
 Ask the questions in order, four at a time, in plain language. For each, show the three levels from `model.json` and let the person pick. People answer faster when they can see the options.
 
@@ -42,20 +44,22 @@ Score what is true today. A plan to do something next month is level 0.
 |---|---|---|---|
 | 1 | Your vector: one role, one direction, a date | 10 | the pitch lies, the network calls are vague, the interviews wander |
 | 2 | Your title and your number: business domain plus technical scope | 8 | you anchor low, or you dodge the question |
-| 3 | Your dream companies: 10 to 15 names | 5 | you apply everywhere and hear back from few |
+| 3 | Destroy your employee mindset: a portfolio of skills, not one job title | 5 | you sell your time, and someone else decides what it is worth |
 | 4 | Your one-minute pitch: largest outcome, differentiator, potential | 12 | nobody listens for the other 59 minutes |
 | 5 | Your digital footprint: LinkedIn, GitHub, a pet project | 10 | the recommendation ends at the first question |
 | 6 | Your network: list 50, reactivate 10, target 20 new | 12 | in five years your options will suck |
 | 7 | Be heard: meetups, podcasts, conferences, communities | 8 | the roles go to peers who are louder, not better |
 | 8 | Your AI level: Ask, Brief, Repeat, Connect, Supervise | 12 | you sit next to the AI and watch it work |
 | 9 | Outcomes, not outputs: product, impact, mission, value | 8 | your work is a nine and it lands like a five |
-| 10 | B-list first, then A-list | 3 | you burn your dream company on your worst interview |
+| 10 | Your dream companies: 10 to 15 names, B-list first | 3 | you burn your dream company on your worst interview |
 | 11 | Interview dry runs, recorded | 5 | you get the meeting and then you freeze |
 | 12 | Negotiate, then protect your first 3 to 6 months | 7 | you take the first offer out of relief |
 
 The weights add up to 100. The pitch, the network and the AI level weigh the most: the best roles are filled through people before they are posted, the pitch is what those people repeat about you, and AI is the skill the market pays for and few can show.
 
-## Calculate
+→ verify: all twelve steps have a level, and no step was scored from what a person probably does.
+
+### 2. Calculate
 
 Each step is scored 0 (missing), 1 (standard for 2026) or 2 (strong).
 
@@ -90,7 +94,9 @@ Gross, a year, Central Europe, 2026. They are defaults: tell the person where ea
 
 Say plainly that the VP figure has no source. Outside Central Europe, ask for their own base.
 
-## The report
+→ verify: `python3 <this skill's folder>/scripts/multiplier.py` ran and printed the table, the market value and the three steps to raise first.
+
+### 3. Write the report
 
 ```
 # Your market value
@@ -122,6 +128,8 @@ Rules for the report:
 - **The number is a direction.** Say once that it is a model built on twelve self-assessed answers and market defaults, and that a real offer depends on the company. Then stop hedging.
 - **End with the `MARKET VALUE MULTIPLIER: X.Xx · <name> (N of 9)` line**, exactly in that form.
 
+→ verify: the report ends with the `MARKET VALUE MULTIPLIER: X.Xx · <name> (N of 9)` line exactly in that form.
+
 ## Scoring honestly
 
 - People overrate steps 4 and 9. Ask them to say the pitch or one outcome statement before you accept a 2.
@@ -129,6 +137,27 @@ Rules for the report:
 - A title with a programming language in it is level 0 on step 2, whatever the seniority.
 - If someone is at 2 on every step, check three of them with a follow-up question. An honest 1.2 helps more than a flattering 1.7.
 
----
-
 Built on the 12 steps Marian Kamenistak uses in mentoring engineering leaders, first presented at the Engineering Leaders Community meetup #37.
+
+## Output
+
+The report from step 3, shown in the chat: role and base, the calculator's table, the multiplier and market value, three steps to raise first with one action each, the steps already strong, and the closing `MARKET VALUE MULTIPLIER` line.
+
+## Done when
+
+- The calculator's multiplier and market value are in the report, with the rounded multiplier applied to the base (0.9 x 95,000, not 0.856 x 95,000).
+- Three steps to raise are named, each with one action that fits in a week.
+- The report says once that the number is a direction built on twelve self-assessed answers and market defaults, and the VP base is named as unsourced.
+- The last line is `MARKET VALUE MULTIPLIER: X.Xx · <name> (N of 9)`.
+
+## Rules
+
+- Score what is true today, because a plan to do something next month is level 0.
+- Never invent an outcome, a number or a company for the person; where the plan needs one, ask.
+- Ask steps 6, 10 and 11 even when a CV is given, because a profile cannot show network, order of conversations or dry runs.
+- Tell the person where each default base salary comes from and ask them to overwrite it if they know their market better.
+
+## References
+
+- `model.json`: read before scoring; steps, weights, level descriptions, bands, base salaries and sources.
+- `scripts/multiplier.py`: the calculator (`python3 <this skill's folder>/scripts/multiplier.py <role> <s1> ... <s12> [--base EUR]`).
