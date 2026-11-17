@@ -51,7 +51,7 @@ Score what is true today. A plan to do something next month is level 0.
 | 7 | Be heard: meetups, podcasts, conferences, communities | 8 | the roles go to peers who are louder, not better |
 | 8 | Your AI level: Ask, Brief, Repeat, Connect, Supervise | 12 | you sit next to the AI and watch it work |
 | 9 | Outcomes, not outputs: product, impact, mission, value | 8 | your work is a nine and it lands like a five |
-| 10 | Your dream companies: 10 to 15 names, B-list first | 3 | you burn your dream company on your worst interview |
+| 10 | Know the business: business model, marketing, sales, talking to customers | 3 | you build what nobody pays for |
 | 11 | Interview dry runs, recorded | 5 | you get the meeting and then you freeze |
 | 12 | Negotiate, then protect your first 3 to 6 months | 7 | you take the first offer out of relief |
 
