@@ -5,9 +5,10 @@ Three free plugins for Claude, one marketplace.
 **`marian-coach`** is about you. Should I take the lead role, what am I worth, how do I look to
 a recruiter who looks me up, and how do I get my company to pay for a mentor.
 
-**`grow-your-value`** is two scores and nothing else: your VMS (Value Multiplicator Score), your
-market value from 0.4 to 1.7, and your digital footprint score from one LinkedIn URL. Both skills
-also ship in `marian-coach`; install this one if the scores are all you want.
+**`grow-your-value`** is two scores and a rewrite: your VMS (Value Multiplicator Score), your
+market value from 0.4 to 1.7, your digital footprint score from one LinkedIn URL, and a
+section-by-section plan to rewrite the profile. All three skills also ship in `marian-coach`;
+install this one if that is all you want.
 
 **`engineering-leadership`** is about your team and your org. Why is the team slow, is the org
 top-heavy, are we ready to start a local leadership meetup.
@@ -38,6 +39,7 @@ Then ask Claude something like:
 - "I'm an EM going for director. What am I worth and what do I fix first?"
 - "What is my VMS?"
 - "Here's my LinkedIn. How do I look to a recruiter?"
+- "Rewrite my LinkedIn headline and About for a CTO search."
 - "Write the case for my company to pay for a mentor."
 - "Here are our Jira exports. Why is the team slow?"
 - "Is my engineering org too top-heavy?"
@@ -53,6 +55,7 @@ Then ask Claude something like:
 | `marian-coach` | `engineering-salary-calculator` | What is a developer or engineering manager worth? 15 skills across 5 pillars, weighted by level, mapped to 2026 Western-Europe gross salary |
 | `marian-coach` | `market-value-multiplier` | Why do two people with the same title get such different offers? Twelve weighted steps, from your direction and pitch to your network and negotiation, give one multiplier on a base salary for EM, director, VP or CTO, and the three steps to raise first |
 | `marian-coach` | `digital-footprint-multiplier` | How do you look to a recruiter, a hiring manager or an AI screening tool? Reads your LinkedIn in your own Chrome and your public work, scores only what it can see, and gives a plan for the next week, month and quarter |
+| `marian-coach` | `linkedin-profile-boost-advisor` | What do I change on my LinkedIn, in which words? Reads your profile, then gives a section-by-section plan with rewritten headline, About and experience (outcomes, not outputs), Featured, skills, keywords, and a 2-week posting starter. Run `digital-footprint-multiplier` first if you want the score |
 | `marian-coach` | `one-minute-pitch-scorer` | Is my one-minute pitch any good? A score out of 10, the words you repeat, the time it takes to say, and three fixes. It coaches; it does not write the pitch for you |
 | `marian-coach` | `engineering-promotion-case` | Am I ready to ask for the promotion? An evidence check, a score out of 10, a one-page case and the plan for the conversation with your manager |
 | `marian-coach` | `first-90-days-leadership` | I just started as team lead, EM, director, VP or CTO. What do I do first? A dated 30/60/90-day plan with the first conversations and one early win |
@@ -108,7 +111,7 @@ servers store nothing you send them. `send_mentoring_offer`, the one tool that c
 details, files the inquiry so a human can reply to it, and it will not run without you saying
 yes first. Full policy: https://www.marian.coach/privacy-policy/
 
-`digital-footprint-multiplier` reads a LinkedIn profile in your own browser. Run it on yourself,
+`digital-footprint-multiplier` and `linkedin-profile-boost-advisor` read a LinkedIn profile in your own browser. Run them on yourself,
 or on someone who knows and agreed.
 
 ## License
