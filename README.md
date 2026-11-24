@@ -1,6 +1,6 @@
 # Engineering Leadership plugins for Claude
 
-Three free plugins for Claude, one marketplace.
+Four free plugins for Claude, one marketplace.
 
 **`marian-coach`** is about you. Should I take the lead role, what am I worth, how do I look to
 a recruiter who looks me up, and how do I get my company to pay for a mentor.
@@ -12,6 +12,10 @@ install this one if that is all you want.
 
 **`engineering-leadership`** is about your team and your org. Why is the team slow, is the org
 top-heavy, are we ready to start a local leadership meetup.
+
+**`elc-awesome-speaker`** gets your talk ready for a stage: a score on the seven ELC Conference
+criteria with the fixes that add the most points, then the deck. It lives in its own repo,
+[elc-awesome-speaker](https://github.com/marian-kamenistak/elc-awesome-speaker), and installs from here too.
 
 Built from 3,662 mentoring sessions with engineering leaders in 17+ countries since 2019, and
 from the Engineering Leaders Community.
@@ -25,6 +29,7 @@ In Claude Code, add this repository as a marketplace, then install one plugin or
 /plugin install marian-coach@marian-coach
 /plugin install grow-your-value@marian-coach
 /plugin install engineering-leadership@marian-coach
+/plugin install elc-awesome-speaker@marian-coach
 ```
 
 In Cowork: **Customize → Plugins → Add marketplace**, paste

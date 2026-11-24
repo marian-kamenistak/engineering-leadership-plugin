@@ -62,6 +62,30 @@
         "community",
         "meetups"
       ]
+    },
+    {
+      "name": "elc-awesome-speaker",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/marian-kamenistak/elc-awesome-speaker.git",
+        "path": "plugins/elc-awesome-speaker",
+        "ref": "main"
+      },
+      "displayName": "ELC Awesome Speaker",
+      "description": "Get your talk ready for a conference or meetup stage. speaker-evaluation scores the talk 0-10 on the seven criteria the ELC Conference programme team uses, with a quote behind each score, and writes out the fixes that add the most points. speaker-deck turns the outline into an interactive web deck with one big QR code to something the room can use the next day.",
+      "version": "1.2.1",
+      "keywords": [
+        "speaking",
+        "conference",
+        "cfp",
+        "talk",
+        "presentation",
+        "slides",
+        "deck",
+        "public-speaking",
+        "engineering-leadership",
+        "meetup"
+      ]
     }
   ]
 }
